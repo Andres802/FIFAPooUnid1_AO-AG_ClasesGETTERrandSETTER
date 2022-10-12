@@ -50,6 +50,14 @@ public class Proyect01 {
         Circuito.virgente = true;
         
         System.out.println(Circuito.mostrarInformacion());
+        
+        System.out.println("--------------------------------------------------------------------------------------");
+        
+        var auto = new Auto();
+        
+        auto.marca="Chevrolet";
+        auto.placa="AGG3496";
+        auto.nombrePropietario = "Andres";
     }
     
     
