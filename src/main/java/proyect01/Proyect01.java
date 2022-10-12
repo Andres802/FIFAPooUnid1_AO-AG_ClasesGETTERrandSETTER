@@ -55,12 +55,30 @@ public class Proyect01 {
         
         var auto = new Auto();
         
-        auto.marca="Chevrolet";
-        auto.placa="AGG3496";
+        auto.marca="Toyota";
+        auto.placa="ADC3496";
         auto.nombrePropietario = "Andres";
         
         System.out.println(auto.mostrarInfo());
-        System.out.println("");
+        System.out.println(auto.getPaisMarca());
+        
+        var auto1 = new Auto();
+        
+        auto1.marca="Chevrolet";
+        auto1.placa="BFG3496";
+        auto1.nombrePropietario = "Luis";
+        
+        System.out.println("" + auto1.mostrarInfo());
+        System.out.println("El pais origen de la marca es "+auto1.getPaisMarca());
+        
+         var auto2 = new Auto();
+        
+        auto2.marca="Chevrolet";
+        auto2.placa="VSD3496";
+        auto2.nombrePropietario = "Gabriel";
+        
+        System.out.println("" + auto2.mostrarInfo());
+        System.out.println("El pais origen de la marca es "+auto2.getPaisMarca());
     }
     
     
