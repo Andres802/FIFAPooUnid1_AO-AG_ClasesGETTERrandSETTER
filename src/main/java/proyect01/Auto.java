@@ -9,68 +9,59 @@ package proyect01;
  * @author ochoa
  */
 public class Auto {
- 
+
     String placa;
     String marca;
     String nombrePropietario;
-    
-    
+
     public String mostrarInfo() {
-    
-        var retorno ="El auto tiene placa " + this.placa + " es de marca " + this.marca +" y el propietario es: "+ this.nombrePropietario;
-        
-        
-       return retorno;
-}
- 
-     public String getProvincia() {
-    
-         
-         
-         
-        var retorno ="";
-        
-        
-       return retorno;
-}
-     
-         public String getPaisMarca() {
-    
-        var retorno ="";
-    
-        if(this.marca.equals("Chevrolet")){
-             retorno = "EEUU";
-             
-         }else {
-            if(this.marca.equals("Toyota")){
-             retorno = "Japon";
-        }else{
-                 if(this.marca.equals("Mercedes Benz")){
-             retorno = "Alemania";
+
+        var retorno = "El auto tiene placa " + this.placa + " es de marca " + this.marca + " y el propietario es: " + this.nombrePropietario;
+
+        return retorno;
+    }
+
+    public String getProvincia() {
+
+        var retorno = "";
+
+        return retorno;
+    }
+
+    public String getPaisMarca() {
+
+        var retorno = "";
+
+        if (this.marca.equals("Chevrolet")) {
+            retorno = "EEUU";
+
+        } else {
+            if (this.marca.equals("Toyota")) {
+                retorno = "Japon";
+            } else {
+                if (this.marca.equals("Mercedes Benz")) {
+                    retorno = "Alemania";
+                } else {
+                    if (this.marca.equals("FIAT")) {
+                        retorno = "Italia ";
+                    } else {
+                        if (this.marca.equals("Jetour")) {
+                            retorno = "China";
+                        } else {
+                            retorno = "no definido";
+                        }
+                    }
+                }
             }
-                 else{
-                      if(this.marca.equals("FIAT")){
-             retorno = "Italia ";
-                      }else{
-                           if(this.marca.equals("Jetour")){
-             retorno = "China";
-                           }
-                           else {
-                               retorno = "no definido";
-                           }
-                      }
-                 }
         }
-        }
-        
-       return retorno;
-}
-   
-       public int getNumeroContinente() {
-    
-        var retorno =0;
-        
-        
-       return retorno;
-}
+
+        return retorno;
+    }
+
+    public int getNumeroContinente() {
+
+        var retorno = 0;
+
+        return retorno;
+    }
 }
