@@ -45,9 +45,24 @@ public class Auto {
             if(this.marca.equals("Toyota")){
              retorno = "Japon";
         }else{
-                retorno = "No definido";
+                 if(this.marca.equals("Mercedes Benz")){
+             retorno = "Alemania";
             }
+                 else{
+                      if(this.marca.equals("FIAT")){
+             retorno = "Italia ";
+                      }else{
+                           if(this.marca.equals("Jetour")){
+             retorno = "China";
+                           }
+                           else {
+                               retorno = "no definido";
+                           }
+                      }
+                 }
         }
+        }
+        
        return retorno;
 }
    

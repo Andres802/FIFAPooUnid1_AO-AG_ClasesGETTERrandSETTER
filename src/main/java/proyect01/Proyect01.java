@@ -53,6 +53,7 @@ public class Proyect01 {
         
         System.out.println("--------------------------------------------------------------------------------------");
         
+        System.out.println("1, Primer Auto");
         var auto = new Auto();
         
         auto.marca="Toyota";
@@ -62,6 +63,7 @@ public class Proyect01 {
         System.out.println(auto.mostrarInfo());
         System.out.println(auto.getPaisMarca());
         
+        System.out.println("2. Segundo Auto");
         var auto1 = new Auto();
         
         auto1.marca="Chevrolet";
@@ -71,14 +73,37 @@ public class Proyect01 {
         System.out.println("" + auto1.mostrarInfo());
         System.out.println("El pais origen de la marca es "+auto1.getPaisMarca());
         
+        System.out.println("3. Tercer Auto");
          var auto2 = new Auto();
         
-        auto2.marca="Chevrolet";
+        auto2.marca="Mercedes Benz";
         auto2.placa="VSD3496";
         auto2.nombrePropietario = "Gabriel";
         
         System.out.println("" + auto2.mostrarInfo());
         System.out.println("El pais origen de la marca es "+auto2.getPaisMarca());
+        
+        System.out.println("4. Cuarto Auto");
+        
+        var auto3 = new Auto();
+        
+        auto3.marca="FIAT";
+        auto3.placa="UBA3496";
+        auto3.nombrePropietario = "Xavier";
+        
+        System.out.println("" + auto3.mostrarInfo());
+        System.out.println("El pais origen de la marca es "+auto3.getPaisMarca());
+        
+        System.out.println("5. Quinto Auto");
+        var auto4 = new Auto();
+        
+        auto4.marca="Jetour";
+        auto4.placa="PBU3496";
+        auto4.nombrePropietario = "Mateo";
+        
+        System.out.println("" + auto4.mostrarInfo());
+        System.out.println("El pais origen de la marca es "+auto4.getPaisMarca());
+        
     }
     
     
