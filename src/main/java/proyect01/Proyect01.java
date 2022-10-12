@@ -58,6 +58,9 @@ public class Proyect01 {
         auto.marca="Chevrolet";
         auto.placa="AGG3496";
         auto.nombrePropietario = "Andres";
+        
+        System.out.println(auto.mostrarInfo());
+        System.out.println("");
     }
     
     
