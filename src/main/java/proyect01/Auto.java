@@ -16,6 +16,7 @@ public class Auto {
     int year;
     String color;
     double precio;
+    int cilindraje;
 
     public String mostrarInfo() {
 
@@ -89,7 +90,7 @@ public class Auto {
 
         switch (marcaPais) {
 
-            case "EE.UU":
+            case "EEUU":
                 retorno = 2;
                 break;
             case "Japon":
@@ -101,7 +102,7 @@ public class Auto {
             case "Italia":
                 retorno = 5;
                 break;
-             case "Alemania":
+            case "Alemania":
                 retorno = 6;
                 break;
             default:
@@ -155,19 +156,81 @@ public class Auto {
         }
         return retorno;
     }
-    
-    public boolean esTaxi(){
+
+    public boolean esTaxi() {
         var retorno = false;
-        
-        if(this.color=="Amarillo"){
-            retorno=true;
-        }else{
-            
+
+        if (this.color == "Amarillo") {
+            retorno = true;
+        } else {
         }
-        
+
         return retorno;
-        
+
     }
-    
-    
+
+    public boolean esClasico(int yearActual, int yearClasic0) {
+
+        var retorno = false;
+
+        return retorno;
+    }
+
+    /*
+    Edad >20 : tasa solidaria 0
+    Edad 0-5 y cilindraje >1500 < 2000 : tasa solidaria 20%costo
+    Edad 0-5 y cilindraje > 2000 : tasa solidaria 25% costo
+    Edad 5-15 y cilindraje <1500 : tasa solidaria 10% costo
+    Edad 5-15 y cilindraje >1500< 2000 : tasa solidaria 15% costo
+    Edad 15-20 y cilindraje > 2000 : tasa solidaria 25% costo
+     */
+    public int calcularTasaSolidaria(int yearActual, double limitePrecio) {
+        var retorno = 0;
+        var edad = this.calcularEdad(yearActual);
+        if (edad > 20) {
+            var result = 0 * limitePrecio;
+            System.out.println("--" + result);
+        } else {
+
+        }
+
+        if (edad > 0 && 5 > edad) {
+            if (this.cilindraje > 1500 && this.cilindraje < 2000) {
+                var result1 = 0.25 * limitePrecio;
+                System.out.println("--" + result1);
+
+            } else {
+
+            }
+
+        } else {
+
+        }
+
+        return retorno;
+    }
+
+    public boolean esPlacaValida() {
+
+        var retorno = false;
+        var longitud = this.placa.length();
+        if (longitud != 7) {
+            var caracter1 = this.placa.charAt(0);
+            var caracter2 = this.placa.charAt(1);
+            var caracter3 = this.placa.charAt(2);
+            var caracter4 = this.placa.charAt(3);
+            var caracter5 = this.placa.charAt(4);
+            var caracter6 = this.placa.charAt(5);
+            
+            if (Character.isDigit(caracter6) && Character.isDigit(caracter5) && Character.isDigit(caracter4) && Character.isLetter(caracter1)) {
+                retorno= true;
+            }
+
+        } else {
+
+        }
+
+        return retorno;
+    }
+
 }
