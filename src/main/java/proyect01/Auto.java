@@ -222,7 +222,7 @@ public class Auto {
             var caracter5 = this.placa.charAt(4);
             var caracter6 = this.placa.charAt(5);
             
-            if (Character.isDigit(caracter6) && Character.isDigit(caracter5) && Character.isDigit(caracter4) && Character.isLetter(caracter1)) {
+            if (Character.isDigit(caracter6) && Character.isDigit(caracter5) && Character.isDigit(caracter4) && Character.isDigit(caracter3) && Character.isDigit(caracter2) && Character.isLetter(caracter1)) {
                 retorno= true;
             }
 
