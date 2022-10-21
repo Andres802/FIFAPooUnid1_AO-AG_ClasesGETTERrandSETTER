@@ -13,7 +13,37 @@ import java.util.Scanner;
 public class Proyect02 {
 
     public static void main(String[] args) {
-        System.out.println(" -----------------------------------------------------");
+        
+        System.out.println("----------------- Vector ------------------");
+        var arreglo = new Arreglo();
+        var vector1= arreglo.crearVector(5);
+        var vector2= arreglo.crearVector(5);
+        
+        var vectorSumado = arreglo.sumaVector(vector1, vector2);
+        
+        for (int i = 0; i < vector1.length; i++) {
+            System.out.println(vector1[i]);
+        }
+        for (int i = 0; i < vector2.length; i++) {
+            System.out.println(vector2[i]);
+        }
+        System.out.println("" + vector1 + "+" + vector2 + " =" + vectorSumado);
+        
+        System.out.println("------------------ Matriz -----------------");
+        var matriz1= arreglo.crearMatriz(3,3);
+        var matriz2= arreglo.crearMatriz(3,3);
+        var matrizSumado = arreglo.sumaMatriz(matriz1.length, matriz2.length);
+        
+        System.out.println("" + matrizSumado);
+        for (int i = 0; i < matriz1.length; i++) {
+            for(int j = 0; j<matriz2.length;j++){
+            System.out.println(matriz1[i][j]);
+            
+        }
+        }
+        
+        
+       /* System.out.println(" -----------------------------------------------------");
         var a = 0;
         System.out.println("a = " + a);
 
@@ -121,12 +151,64 @@ public class Proyect02 {
         for (i = 0; i < numeros; i++) {
             System.out.println("Ingrese el numero");
             nm = num.nextInt();
-            arregl[i]=nm;
-            System.out.println("su numero ingresado son: " + nm);
+            arregl[i] = nm;
+            System.out.println(nm);
         }
         for (i = 0; i < numeros; i++) {
             System.out.println("sus nuemros ingresados son " + arregl[i]);
         }
 
+        System.out.println("Ingrese el número de filas que tendrá la matriz");
+        var filas = lectura.nextInt();
+        System.out.println("Ingrese el número de columnas que tendrá la matriz");
+        var columnas = lectura.nextInt();
+
+        var matriz = new int[2][3];
+
+        System.out.println("Ingrese el valor correspondiente a la posición 0,0");
+        matriz[0][0] = lectura.nextInt();
+        System.out.println("Ingrese el valor correspondiente a la posición 0,1");
+        matriz[0][1] = lectura.nextInt();
+        System.out.println("Ingrese el valor correspondiente a la posición 0,2");
+        matriz[0][2] = lectura.nextInt();
+        System.out.println("Ingrese el valor correspondiente a la posición 1,0");
+        matriz[1][0] = lectura.nextInt();
+        System.out.println("Ingrese el valor correspondiente a la posición 1,1");
+        matriz[1][1] = lectura.nextInt();
+        System.out.println("Ingrese el valor correspondiente a la posición 1,2");
+        matriz[1][2] = lectura.nextInt();
+
+        System.out.println(matriz[0][0] + " " + matriz[0][1] + " " + matriz[0][2]);
+        System.out.println(matriz[1][0] + " " + matriz[1][1] + " " + matriz[1][2]);
+
+        var matriz1 = new int[2][3];
+        matriz[0][0] = 00;
+        matriz[0][1] = 01;
+        matriz[0][2] = 02;
+        matriz[1][0] = 10;
+        matriz[1][1] = 11;
+        matriz[1][2] = 12;
+
+        while (i < matriz.length) {
+            var j = 0;
+            while (j < matriz[i].length) {
+                System.out.println(matriz[i][j]);
+                j++;
+            }
+            i++;
+        }
+        for (i = 0; i < matriz.length; i++) {
+            for (var j = 0; j < matriz[i].length; j++) {
+                System.out.println(matriz[i][j] * 10);
+            }
+        }
+        for (int x1[] : matriz1) {
+            for (var y : x1) {
+                System.out.println(y * 100);
+            }
+        }
+
+        System.out.println(Character.isDigit('2'));
+        System.out.println(Character.isAlphabetic('C'));*/
     }
 }
