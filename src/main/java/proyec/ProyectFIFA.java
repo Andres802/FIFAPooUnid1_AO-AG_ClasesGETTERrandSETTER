@@ -24,7 +24,6 @@ public class ProyectFIFA {
         brasil.nombre = "Confederacion Brasileña de Futbol (CBF)";
         System.out.println(brasil.obtienePais());
 
-
         var arg = new Seleccion();
         arg.codigoFIFA = "ARG";
         arg.nombre = "Federación Argentina de Fútbol (FAF)";
@@ -36,19 +35,19 @@ public class ProyectFIFA {
         TC1.nombre = "Gustavo Alfaro";
         TC1.yearIngreso = 2010;
         TC1.equipo = ecuador;
-        System.out.println("1. " +TC1.mostrarInfo());
+        System.out.println("1. " + TC1.mostrarInfo());
 
         var TC2 = new Director();
         TC2.nombre = "Carlos Caetano Bledorn";
         TC2.yearIngreso = 2016;
         TC2.equipo = brasil;
-        System.out.println("2. " +TC2.mostrarInfo());
-        
+        System.out.println("2. " + TC2.mostrarInfo());
+
         var TC3 = new Director();
         TC3.nombre = " Lionel Scaloni";
         TC3.yearIngreso = 2017;
         TC3.equipo = arg;
-        System.out.println("3. " +TC3.mostrarInfo());
+        System.out.println("3. " + TC3.mostrarInfo());
 
         System.out.println("-------------------- JUGADORES --------------------");
         var enner = new Jugador();
@@ -69,7 +68,6 @@ public class ProyectFIFA {
         silva.equipo = brasil;
         System.out.println("2." + silva.mostrarInfo());
 
-        
         var reyMessi = new Jugador();
         reyMessi.nombre = "Lionel Messi";
         reyMessi.posicion = "DC";

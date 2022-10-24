@@ -14,6 +14,7 @@ public class Seleccion {
     String nombre;
     String pais;
     int participacionesMundial;
+    Director director;
 
     public String obtienePais() {
 
@@ -37,8 +38,8 @@ public class Seleccion {
 
             default:
                 throw new AssertionError();
+        }
+        return retorno;
     }
-    return retorno ;
-}
 
 }

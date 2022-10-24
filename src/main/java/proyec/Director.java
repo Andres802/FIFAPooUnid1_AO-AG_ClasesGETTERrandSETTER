@@ -9,15 +9,14 @@ package proyec;
  * @author ochoa
  */
 public class Director {
-    
+
     String nombre;
     int yearIngreso;
     Seleccion equipo;
-    
-    
-    public String mostrarInfo (){
-        
-        return  "El director se llama " + this.nombre + " dirige en la selecion " + this.equipo.nombre + " desde " + this.yearIngreso;
-        
+
+    public String mostrarInfo() {
+
+        return "El director se llama " + this.nombre + " dirige en la selecion " + this.equipo.nombre + " desde " + this.yearIngreso;
+
     }
 }
