@@ -11,5 +11,5 @@
         <maven.compiler.target>18</maven.compiler.target>
         <exec.mainClass>com.mycompany.proyect01.Proyect01</exec.mainClass>
     </properties>
-    <name>TareaPooUnid1_AO-AG_Clases</name>
+    <name>FIFAPooUnid1_AO-AG_Clases</name>
 </project>
