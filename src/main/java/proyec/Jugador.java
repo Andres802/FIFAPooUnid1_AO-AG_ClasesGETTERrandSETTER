@@ -18,7 +18,7 @@ public class Jugador {
     Director TC;
 
     public String mostrarInfo() {
-        return this.nombre + " jugador de " + this.equip + " juega en la selección de " + this.equipo.nombre + " su fecha de nacimineto es " + this.fechaNacimiento + " y su director actual de la seleccion es " + this.TC.nombre;
+        return this.nombre + " jugador de " + this.equip + " juega en la selección de " + this.equipo.nombre + " su fecha de nacimineto es " + this.fechaNacimiento + " y su director actual de la seleccion es " + this.TC.nombreC;
     }
 
 }

@@ -17,11 +17,14 @@ public class ProyectFIFA {
         ecuador.codigoFIFA = "ECU";
         ecuador.nombre = "Federacion Ecuatoriana de Futbol (FEF)";
         ecuador.participacionesMundial = 4;
+        
         System.out.println(ecuador.obtienePais());
+        
 
         var brasil = new Seleccion();
         brasil.codigoFIFA = "BRA";
         brasil.nombre = "Confederacion Brasileña de Futbol (CBF)";
+        brasil.participacionesMundial = 1;
         System.out.println(brasil.obtienePais());
 
         var arg = new Seleccion();
@@ -32,19 +35,19 @@ public class ProyectFIFA {
 
         System.out.println("-------------------- DIRECTOR --------------------");
         var TC1 = new Director();
-        TC1.nombre = "Gustavo Alfaro";
+        TC1.nombreC = "Gustavo Alfaro";
         TC1.yearIngreso = 2010;
         TC1.equipo = ecuador;
         System.out.println("1. " + TC1.mostrarInfo());
 
         var TC2 = new Director();
-        TC2.nombre = "Carlos Caetano Bledorn";
+        TC2.nombreC = "Carlos Caetano Bledorn";
         TC2.yearIngreso = 2016;
         TC2.equipo = brasil;
         System.out.println("2. " + TC2.mostrarInfo());
 
         var TC3 = new Director();
-        TC3.nombre = " Lionel Scaloni";
+        TC3.nombreC = " Lionel Scaloni";
         TC3.yearIngreso = 2017;
         TC3.equipo = arg;
         System.out.println("3. " + TC3.mostrarInfo());
@@ -78,5 +81,13 @@ public class ProyectFIFA {
 
         System.out.println("3." + reyMessi.mostrarInfo());
 
+        System.out.println("-------------------- Info de la Seleccion --------------------");
+         ecuador.director = TC1;
+         System.out.println("-" + ecuador.mostrarInfo());
+         brasil.director = TC2;
+         System.out.println("-" + brasil.mostrarInfo());
+         arg.director = TC3;
+         System.out.println("-" + arg.mostrarInfo());
+         
     }
 }

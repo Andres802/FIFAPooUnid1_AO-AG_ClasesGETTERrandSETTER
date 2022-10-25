@@ -19,7 +19,6 @@ public class Seleccion {
     public String obtienePais() {
 
         var retorno = "Desconocido";
-
         switch (codigoFIFA) {
             case "ECU":
                 retorno = "ECUADOR";
@@ -40,6 +39,9 @@ public class Seleccion {
                 throw new AssertionError();
         }
         return retorno;
+    }
+    public String mostrarInfo(){
+        return "El nombre de la seleccion es " + this.nombre + " su codigo de Fifa es " + this.codigoFIFA + " que es de " + this.obtienePais() + " su numero de participacion al mundial es " + this.participacionesMundial + " y el director del equipo es " + this.director.nombreC; 
     }
 
 }
