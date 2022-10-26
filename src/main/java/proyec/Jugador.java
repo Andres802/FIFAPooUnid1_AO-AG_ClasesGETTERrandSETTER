@@ -8,9 +8,8 @@ package proyec;
  *
  * @author ochoa
  */
-public class Jugador {
+public class Jugador extends Persona{
 
-    private String nombre;
     private int fechaNacimiento;
     private String posicion;
     Seleccion equipo;
@@ -18,17 +17,11 @@ public class Jugador {
     Director TC;
 
     public String mostrarInfo() {
-        return this.getNombre() + " jugador de " + this.getEquip() + " juega en la selección de " + this.equipo.getNombre() + " su fecha de nacimineto es " + this.getFechaNacimiento() + " y su director actual de la seleccion es " + this.TC.getNombreC();
+        return this.getNombre() + " jugador de " + this.getEquip() + " juega en la selección de " + this.equipo.getNombre() + " su fecha de nacimineto es " + this.getFechaNacimiento() + " y su director actual de la seleccion es " + this.TC.getNombre();
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
+    
+ 
     public int getFechaNacimiento() {
         return fechaNacimiento;
     }

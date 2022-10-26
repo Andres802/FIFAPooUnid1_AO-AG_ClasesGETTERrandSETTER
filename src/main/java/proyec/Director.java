@@ -8,25 +8,18 @@ package proyec;
  *
  * @author ochoa
  */
-public class Director {
+public class Director extends Persona{
 
-    private String nombreC;
+    
     private int yearIngreso;
     Seleccion equipo;
 
     public String mostrarInfo() {
 
-        return "El director se llama " + this.nombreC + " dirige en la selecion " + this.equipo.getNombre() + " desde " + this.getYearIngreso();
+        return "El director se llama " + this.getNombre() + " dirige en la selecion " + this.equipo.getNombre() + " desde " + this.getYearIngreso();
 
     }
 
-    public String getNombreC() {
-        return nombreC;
-    }
-
-    public void setNombreC(String nombreC) {
-        this.nombreC = nombreC;
-    }
 
     public int getYearIngreso() {
         return yearIngreso;

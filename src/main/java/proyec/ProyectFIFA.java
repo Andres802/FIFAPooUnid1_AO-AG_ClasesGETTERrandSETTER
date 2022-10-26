@@ -37,21 +37,21 @@ public class ProyectFIFA {
 
         System.out.println("-------------------- DIRECTOR --------------------");
         var TC1 = new Director();
-        TC1.setNombreC("Gustavo Alfaro");
+        TC1.setNombre("Gustavo Alfaro");
         TC1.setYearIngreso(2010);
         TC1.equipo = ecuador;
         
         System.out.println("1. " + TC1.mostrarInfo());
 
         var TC2 = new Director();
-        TC2.setNombreC("Carlos Caetano Bledorn");
+        TC2.setNombre("Carlos Caetano Bledorn");
         TC2.setYearIngreso(2016);
         TC2.equipo = brasil;
         
         System.out.println("2. " + TC2.mostrarInfo());
 
         var TC3 = new Director();
-        TC3.setNombreC(" Lionel Scaloni");
+        TC3.setNombre(" Lionel Scaloni");
         TC3.setYearIngreso(2017);
         TC3.equipo = arg;
         

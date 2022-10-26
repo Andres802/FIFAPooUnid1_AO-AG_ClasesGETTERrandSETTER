@@ -41,7 +41,7 @@ public class Seleccion {
         return retorno;
     }
     public String mostrarInfo(){
-        return "El nombre de la seleccion es " + this.getNombre() + " su codigo de Fifa es " + this.getCodigoFIFA() + " que es de " + this.obtienePais() + " su numero de participacion al mundial es " + this.getParticipacionesMundial() + " y el director del equipo es " + this.director.getNombreC(); 
+        return "El nombre de la seleccion es " + this.getNombre() + " su codigo de Fifa es " + this.getCodigoFIFA() + " que es de " + this.obtienePais() + " su numero de participacion al mundial es " + this.getParticipacionesMundial() + " y el director del equipo es " + this.director.getNombre(); 
     }
 
     public String getCodigoFIFA() {
