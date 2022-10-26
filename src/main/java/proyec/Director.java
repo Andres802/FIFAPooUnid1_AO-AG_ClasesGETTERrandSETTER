@@ -10,13 +10,39 @@ package proyec;
  */
 public class Director {
 
-    String nombreC;
-    int yearIngreso;
+    private String nombreC;
+    private int yearIngreso;
     Seleccion equipo;
 
     public String mostrarInfo() {
 
-        return "El director se llama " + this.nombreC + " dirige en la selecion " + this.equipo.nombre + " desde " + this.yearIngreso;
+        return "El director se llama " + this.nombreC + " dirige en la selecion " + this.equipo.getNombre() + " desde " + this.getYearIngreso();
 
     }
+
+    public String getNombreC() {
+        return nombreC;
+    }
+
+    public void setNombreC(String nombreC) {
+        this.nombreC = nombreC;
+    }
+
+    public int getYearIngreso() {
+        return yearIngreso;
+    }
+
+    public void setYearIngreso(int yearIngreso) {
+        this.yearIngreso = yearIngreso;
+    }
+
+    public Seleccion getEquipo() {
+        return equipo;
+    }
+
+    public void setEquipo(Seleccion equipo) {
+        this.equipo = equipo;
+    }
+    
+    
 }

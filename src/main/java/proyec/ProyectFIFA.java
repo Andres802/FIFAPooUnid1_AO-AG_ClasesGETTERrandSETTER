@@ -14,69 +14,69 @@ public class ProyectFIFA {
 
         System.out.println("-------------------- SELECCION --------------------");
         var ecuador = new Seleccion();
-        ecuador.codigoFIFA = "ECU";
-        ecuador.nombre = "Federacion Ecuatoriana de Futbol (FEF)";
-        ecuador.participacionesMundial = 4;
+        ecuador.setCodigoFIFA ("ECU");
+        ecuador.setNombre ("Federacion Ecuatoriana de Futbol (FEF)");
+        ecuador.setParticipacionesMundial (4);
         
         System.out.println(ecuador.obtienePais());
         
 
         var brasil = new Seleccion();
-        brasil.codigoFIFA = "BRA";
-        brasil.nombre = "Confederacion Brasileña de Futbol (CBF)";
-        brasil.participacionesMundial = 1;
+        brasil.setCodigoFIFA ("BRA");
+        brasil.setNombre ("Confederacion Brasileña de Futbol (CBF)");
+        brasil.setParticipacionesMundial(1);
         System.out.println(brasil.obtienePais());
 
         var arg = new Seleccion();
-        arg.codigoFIFA = "ARG";
-        arg.nombre = "Federación Argentina de Fútbol (FAF)";
-        arg.participacionesMundial = 9;
+        arg.setCodigoFIFA ("ARG");
+        arg.setNombre ("Federación Argentina de Fútbol (FAF)");
+        arg.setParticipacionesMundial (9);
         System.out.println(arg.obtienePais());
 
         System.out.println("-------------------- DIRECTOR --------------------");
         var TC1 = new Director();
-        TC1.nombreC = "Gustavo Alfaro";
-        TC1.yearIngreso = 2010;
+        TC1.setNombreC("Gustavo Alfaro");
+        TC1.setYearIngreso(2010);
         TC1.equipo = ecuador;
         System.out.println("1. " + TC1.mostrarInfo());
 
         var TC2 = new Director();
-        TC2.nombreC = "Carlos Caetano Bledorn";
-        TC2.yearIngreso = 2016;
+        TC2.setNombreC("Carlos Caetano Bledorn");
+        TC2.setYearIngreso(2016);
         TC2.equipo = brasil;
         System.out.println("2. " + TC2.mostrarInfo());
 
         var TC3 = new Director();
-        TC3.nombreC = " Lionel Scaloni";
-        TC3.yearIngreso = 2017;
+        TC3.setNombreC(" Lionel Scaloni");
+        TC3.setYearIngreso(2017);
         TC3.equipo = arg;
         System.out.println("3. " + TC3.mostrarInfo());
 
         System.out.println("-------------------- JUGADORES --------------------");
         var enner = new Jugador();
-        enner.nombre = "Enner Valencia";
-        enner.posicion = "Goleador";
-        enner.fechaNacimiento = 1989;
+        enner.setNombre ("Enner Valencia");
+        enner.setPosicion ("Goleador");
+        enner.setFechaNacimiento (1989);
         enner.equipo = ecuador;
         enner.TC = TC1;
-        enner.equip = "Fenerbahçe S. K";
+        enner.setEquip ("Fenerbahçe S. K");
         System.out.println("1. " + enner.mostrarInfo());
 
         var silva = new Jugador();
-        silva.nombre = "Thiago Silva";
-        silva.posicion = "Defensa";
-        silva.fechaNacimiento = 1984;
+        silva.setNombre ("Thiago Silva");
+        silva.setPosicion("Defensa");
+        silva.setFechaNacimiento(1984);
         silva.TC = TC2;
-        silva.equip = "Chelsea";
+        silva.setEquip("Chelsea");
         silva.equipo = brasil;
         System.out.println("2." + silva.mostrarInfo());
 
         var reyMessi = new Jugador();
-        reyMessi.nombre = "Lionel Messi";
-        reyMessi.posicion = "DC";
-        reyMessi.fechaNacimiento = 1987;
+        reyMessi.setNombre("Lionel Messi");
+        reyMessi.setPosicion( "DC");
+        reyMessi.setFechaNacimiento (1987);
         reyMessi.TC = TC3;
-        reyMessi.equip = "PSG";
+        reyMessi.setEquip("PSG");
         reyMessi.equipo = arg;
 
         System.out.println("3." + reyMessi.mostrarInfo());

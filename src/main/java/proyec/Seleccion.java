@@ -10,16 +10,16 @@ package proyec;
  */
 public class Seleccion {
 
-    String codigoFIFA;
-    String nombre;
-    String pais;
-    int participacionesMundial;
+    private String codigoFIFA;
+    private String nombre;
+    private String pais;
+  private  int participacionesMundial;
     Director director;
 
     public String obtienePais() {
 
         var retorno = "Desconocido";
-        switch (codigoFIFA) {
+        switch (getCodigoFIFA()) {
             case "ECU":
                 retorno = "ECUADOR";
                 break;
@@ -41,7 +41,48 @@ public class Seleccion {
         return retorno;
     }
     public String mostrarInfo(){
-        return "El nombre de la seleccion es " + this.nombre + " su codigo de Fifa es " + this.codigoFIFA + " que es de " + this.obtienePais() + " su numero de participacion al mundial es " + this.participacionesMundial + " y el director del equipo es " + this.director.nombreC; 
+        return "El nombre de la seleccion es " + this.getNombre() + " su codigo de Fifa es " + this.getCodigoFIFA() + " que es de " + this.obtienePais() + " su numero de participacion al mundial es " + this.getParticipacionesMundial() + " y el director del equipo es " + this.director.getNombreC(); 
     }
+
+    public String getCodigoFIFA() {
+        return codigoFIFA;
+    }
+
+    public void setCodigoFIFA(String codigoFIFA) {
+        this.codigoFIFA = codigoFIFA;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getPais() {
+        return pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
+    public int getParticipacionesMundial() {
+        return participacionesMundial;
+    }
+
+    public void setParticipacionesMundial(int participacionesMundial) {
+        this.participacionesMundial = participacionesMundial;
+    }
+
+    public Director getDirector() {
+        return director;
+    }
+
+    public void setDirector(Director director) {
+        this.director = director;
+    }
+    
 
 }

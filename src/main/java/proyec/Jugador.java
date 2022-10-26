@@ -10,15 +10,64 @@ package proyec;
  */
 public class Jugador {
 
-    String nombre;
-    int fechaNacimiento;
-    String posicion;
+    private String nombre;
+    private int fechaNacimiento;
+    private String posicion;
     Seleccion equipo;
-    String equip;
+    private String equip;
     Director TC;
 
     public String mostrarInfo() {
-        return this.nombre + " jugador de " + this.equip + " juega en la selección de " + this.equipo.nombre + " su fecha de nacimineto es " + this.fechaNacimiento + " y su director actual de la seleccion es " + this.TC.nombreC;
+        return this.getNombre() + " jugador de " + this.getEquip() + " juega en la selección de " + this.equipo.getNombre() + " su fecha de nacimineto es " + this.getFechaNacimiento() + " y su director actual de la seleccion es " + this.TC.getNombreC();
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    public void setFechaNacimiento(int fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    public String getPosicion() {
+        return posicion;
+    }
+
+    public void setPosicion(String posicion) {
+        this.posicion = posicion;
+    }
+
+    public Seleccion getEquipo() {
+        return equipo;
+    }
+
+    public void setEquipo(Seleccion equipo) {
+        this.equipo = equipo;
+    }
+
+    public String getEquip() {
+        return equip;
+    }
+
+    public void setEquip(String equip) {
+        this.equip = equip;
+    }
+
+    public Director getTC() {
+        return TC;
+    }
+
+    public void setTC(Director TC) {
+        this.TC = TC;
+    }
+
+    
 }
