@@ -25,12 +25,14 @@ public class ProyectFIFA {
         brasil.setCodigoFIFA ("BRA");
         brasil.setNombre ("Confederacion Brasileña de Futbol (CBF)");
         brasil.setParticipacionesMundial(1);
+        
         System.out.println(brasil.obtienePais());
 
         var arg = new Seleccion();
         arg.setCodigoFIFA ("ARG");
         arg.setNombre ("Federación Argentina de Fútbol (FAF)");
         arg.setParticipacionesMundial (9);
+        
         System.out.println(arg.obtienePais());
 
         System.out.println("-------------------- DIRECTOR --------------------");
@@ -38,18 +40,21 @@ public class ProyectFIFA {
         TC1.setNombreC("Gustavo Alfaro");
         TC1.setYearIngreso(2010);
         TC1.equipo = ecuador;
+        
         System.out.println("1. " + TC1.mostrarInfo());
 
         var TC2 = new Director();
         TC2.setNombreC("Carlos Caetano Bledorn");
         TC2.setYearIngreso(2016);
         TC2.equipo = brasil;
+        
         System.out.println("2. " + TC2.mostrarInfo());
 
         var TC3 = new Director();
         TC3.setNombreC(" Lionel Scaloni");
         TC3.setYearIngreso(2017);
         TC3.equipo = arg;
+        
         System.out.println("3. " + TC3.mostrarInfo());
 
         System.out.println("-------------------- JUGADORES --------------------");
@@ -60,6 +65,7 @@ public class ProyectFIFA {
         enner.equipo = ecuador;
         enner.TC = TC1;
         enner.setEquip ("Fenerbahçe S. K");
+        
         System.out.println("1. " + enner.mostrarInfo());
 
         var silva = new Jugador();
@@ -69,6 +75,7 @@ public class ProyectFIFA {
         silva.TC = TC2;
         silva.setEquip("Chelsea");
         silva.equipo = brasil;
+        
         System.out.println("2." + silva.mostrarInfo());
 
         var reyMessi = new Jugador();
@@ -78,8 +85,10 @@ public class ProyectFIFA {
         reyMessi.TC = TC3;
         reyMessi.setEquip("PSG");
         reyMessi.equipo = arg;
+        
 
         System.out.println("3." + reyMessi.mostrarInfo());
+        
 
         System.out.println("-------------------- Info de la Seleccion --------------------");
          ecuador.director = TC1;

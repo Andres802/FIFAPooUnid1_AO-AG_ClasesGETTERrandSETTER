@@ -63,11 +63,13 @@ public class Jugador {
 
     public Director getTC() {
         return TC;
-    }
-
-    public void setTC(Director TC) {
-        this.TC = TC;
+        
     }
 
     
+    public void setTC(Director TC) {
+        this.TC = TC;
+    }
+    
+
 }

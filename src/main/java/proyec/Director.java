@@ -43,6 +43,5 @@ public class Director {
     public void setEquipo(Seleccion equipo) {
         this.equipo = equipo;
     }
-    
-    
+
 }
