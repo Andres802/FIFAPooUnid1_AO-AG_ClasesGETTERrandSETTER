@@ -87,12 +87,16 @@ public class ProyectFIFA {
         reyMessi.equipo = arg;
         
 
+        var persona = new Persona();
+        persona.setNombre("Andres");
+        persona.setFechaNacimiento(1992);
         System.out.println("3." + reyMessi.mostrarInfo());
         
 
         System.out.println("-------------------- Info de la Seleccion --------------------");
          ecuador.director = TC1;
          System.out.println("-" + ecuador.mostrarInfo());
+         System.out.println(""+ persona.moatrarInfo());
          brasil.director = TC2;
          System.out.println("-" + brasil.mostrarInfo());
          arg.director = TC3;

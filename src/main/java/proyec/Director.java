@@ -13,10 +13,11 @@ public class Director extends Persona{
     
     private int yearIngreso;
     Seleccion equipo;
+    
 
     public String mostrarInfo() {
 
-        return "El director se llama " + this.getNombre() + " dirige en la selecion " + this.equipo.getNombre() + " desde " + this.getYearIngreso();
+        return "El director se llama " + this.getNombre() +" su nacimineto es " + this.getFechaNacimiento() +" dirige en la selecion " + this.equipo.getNombre() + " desde " + this.getYearIngreso();
 
     }
 

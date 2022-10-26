@@ -10,7 +10,7 @@ package proyec;
  */
 public class Jugador extends Persona{
 
-    private int fechaNacimiento;
+   
     private String posicion;
     Seleccion equipo;
     private String equip;
@@ -20,15 +20,7 @@ public class Jugador extends Persona{
         return this.getNombre() + " jugador de " + this.getEquip() + " juega en la selección de " + this.equipo.getNombre() + " su fecha de nacimineto es " + this.getFechaNacimiento() + " y su director actual de la seleccion es " + this.TC.getNombre();
     }
 
-    
- 
-    public int getFechaNacimiento() {
-        return fechaNacimiento;
-    }
-
-    public void setFechaNacimiento(int fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
-    }
+   
 
     public String getPosicion() {
         return posicion;
